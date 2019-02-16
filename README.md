@@ -4,12 +4,16 @@ PoshBot plugin to return TOPdesk incidents and assets.
 This module currently provides 2 commands: Get-TdIncident and Get-TdAsset
 
 ## What does it do?
-`Get-TdIncident` returns individual incidents
 
+`Get-TdIncident`, or `!TdTicket` returns incidents
 
+![Return an incident]({{"/images/Get-TdIncident.png" | absolute_url}})
+
+Use `!TdTicket -op operatorEmail@company.net` to return a list of all current incidents for the operator. This is a great way to see a list of all currently assigned incidents.
 
 `Get-TdAsset` Returns assets
 
+![Return an asset]({{"/images/Get-TdAsset.png" | absolute_url}})
 
 
 # Requirements
@@ -31,7 +35,7 @@ $pbc.PluginConfiguration = @{
       'PoshBot.TOPdesk' = @{
         Credential = $myCred
         Url = 'https://company.topdesk.net'
-        ApplicationPassword = $true # I recommend using an application password 
+        ApplicationPassword = $true # I recommend using an application password
     }
 }
 $pbc | Save-PoshBotConfiguration -Path ~/.poshbot/bot.psd1
