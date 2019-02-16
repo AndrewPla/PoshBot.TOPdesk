@@ -13,8 +13,7 @@ Use `!TdTicket -op operatorEmail@company.net` to return a list of all current in
 
 `Get-TdAsset` Returns assets
 
-![Return an asset]({{"/images/Get-TdAsset.png" | absolute_url}})
-
+![Return an asset]({{"https://raw.githubusercontent.com/AndrewPla/poshbot.topdesk/master/assets/Get-TdAsset.png" | absolute_url}})
 
 # Requirements
 
