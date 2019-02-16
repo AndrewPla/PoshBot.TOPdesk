@@ -7,13 +7,13 @@ This module currently provides 2 commands: Get-TdIncident and Get-TdAsset
 
 `Get-TdIncident`, or `!TdTicket` returns incidents
 
-![Return an incident](/images/Get-TdIncident.png)
+![Return an incident](incident.png)
 
 Use `!TdTicket -op operatorEmail@company.net` to return a list of all current incidents for the operator. This is a great way to see a list of all currently assigned incidents.
 
 `Get-TdAsset` Returns assets
 
-![Return an asset](https://raw.githubusercontent.com/AndrewPla/poshbot.topdesk/master/assets/Get-TdAsset.png)
+![Return an asset](asset.png)
 
 # Requirements
 
