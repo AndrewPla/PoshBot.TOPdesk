@@ -23,12 +23,16 @@ This module requires the TOPdeskPS powershell module to communicate with TOPdesk
 
 TOPdeskPS requires you provide credentials into the Poshbot configuration file. This is detailed in my post INSERTPOSTHERE
 
+### Create the propert TOPdesk Operator
+
+Create an operator with APi access and read access to Incident Management and Asset Management. Add the operator to the appropriate operator groups. Then generate an api key for that user. This is the operator account that will be performing our topdesk api queries.
+
 ### Add the TOPdesk plugin configuration
 
-This configuration needs to be created as the same user account that will run PoshBot
+This configuration needs to be created as the same user account that will run PoshBot.
 
 ```
-
+$myCred = Get-Credentail # Username is the username of the operator account created for this. password is the apikey
 $pbc = Get-PoshBotPlugin
 $pbc.PluginConfiguration = @{
       'PoshBot.TOPdesk' = @{
