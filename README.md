@@ -32,7 +32,7 @@ Create an operator with APi access and read access to Incident Management and As
 This configuration needs to be created as the same user account that will run PoshBot.
 
 ```
-$myCred = Get-Credentail # Username is the username of the operator account created for this. password is the apikey
+$myCred = Get-Credential # Username is the username of the operator account created for this. password is the apikey
 $pbc = Get-PoshBotPlugin
 $pbc.PluginConfiguration = @{
       'PoshBot.TOPdesk' = @{
